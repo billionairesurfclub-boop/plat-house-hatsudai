@@ -9,25 +9,25 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "ぷらっとハウス西新宿 | 新宿 130㎡ 一棟貸し切り 最大14名",
+  title: "ぷらっとハウス新大塚 | 新大塚・東池袋 民泊 最大8名 2タイプ客室",
   description:
-    "西新宿５丁目駅・初台駅徒歩10分。130㎡の一棟まるごと貸し切り。6つの寝室で最大14名。Netflix・Nintendo Switch・VRヘッドセット・10ギガインターネット・ドラム式洗濯機完備。新宿観光・グループ旅行に最適。",
+    "新大塚駅・東池袋駅徒歩10分。80㎡3DK（最大8名）と18㎡スタジオ（最大2名）の2タイプ。Netflix・Nintendo Switch・10ギガインターネット・ドラム式洗濯機完備。駐車場あり（有料）。",
   keywords:
-    "ぷらっとハウス西新宿, 西新宿 一棟貸し切り, 西新宿 民泊, 新宿 一棟貸し, 東京 大人数 宿泊, ファミリー旅行 新宿, グループ旅行 新宿, 西新宿 宿泊, Tokyo private house, Nishi-Shinjuku accommodation, Tokyo group stay, 新宿 貸し切り 宿泊, 130平米 東京",
+    "ぷらっとハウス新大塚, 新大塚 民泊, 新大塚 宿泊, 東池袋 民泊, 文京区 民泊, 東京 グループ宿泊, 新大塚 一棟貸し, Tokyo Shin-Otsuka accommodation, 新大塚 ファミリー旅行",
   openGraph: {
-    title: "ぷらっとハウス西新宿 | 新宿 130㎡ 一棟貸し切り 最大14名",
+    title: "ぷらっとハウス新大塚 | 新大塚・東池袋 民泊 最大8名",
     description:
-      "西新宿５丁目駅徒歩10分。130㎡一棟貸し切り。6寝室・最大14名。Netflix・VR・10ギガ完備。",
-    url: "https://nishishinjuku.plat-house.jp",
-    siteName: "Plat House Nishi-Shinjuku",
+      "新大塚駅徒歩10分。80㎡3DK（最大8名）と18㎡スタジオ（最大2名）。Netflix・Switch・10ギガ完備。駐車場あり。",
+    url: "https://shinotsuka.plat-house.jp",
+    siteName: "Plat House Shin-Otsuka",
     locale: "ja_JP",
     type: "website",
   },
   alternates: {
-    canonical: "https://nishishinjuku.plat-house.jp",
+    canonical: "https://shinotsuka.plat-house.jp",
     languages: {
-      "ja": "https://nishishinjuku.plat-house.jp",
-      "en": "https://nishishinjuku.plat-house.jp/en",
+      "ja": "https://shinotsuka.plat-house.jp",
+      "en": "https://shinotsuka.plat-house.jp/en",
     },
   },
 };
@@ -43,26 +43,26 @@ export default function RootLayout({
         <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LodgingBusiness",
-          "name": "ぷらっとハウス西新宿",
-          "url": "https://nishishinjuku.plat-house.jp",
+          "name": "ぷらっとハウス新大塚",
+          "url": "https://shinotsuka.plat-house.jp",
           "telephone": "08070583086",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "西新宿4-23-10",
-            "addressLocality": "新宿区",
+            "streetAddress": "大塚6-25-5",
+            "addressLocality": "文京区",
             "addressRegion": "東京都",
-            "postalCode": "160-0023",
+            "postalCode": "112-0012",
             "addressCountry": "JP"
           },
           "checkinTime": "16:00",
           "checkoutTime": "11:00",
-          "priceRange": "¥40,000〜¥70,000",
+          "priceRange": "¥20,000〜¥50,000",
           "amenityFeature": [
             { "@type": "LocationFeatureSpecification", "name": "Netflix", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Nintendo Switch", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "VRヘッドセット", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "10ギガインターネット", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "ドラム式洗濯機", "value": true }
+            { "@type": "LocationFeatureSpecification", "name": "ドラム式洗濯機", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "駐車場", "value": true }
           ]
         }) }} />
         {children}
