@@ -9,25 +9,25 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "ぷらっとハウス表参道 | 表参道駅10分 民泊 キッチン・浴槽完備 カップル向け",
+  title: "ぷらっとハウス渋谷Ⅲ（神泉）| 渋谷駅5分 民泊 最大6名 80㎡ 浴槽・キッチン完備",
   description:
-    "表参道駅徒歩10分。キッチン・浴槽・リビング完備の20㎡客室2室。Netflix・Nintendo Switch・10ギガインターネット・ボタニストアメニティ完備。表参道・原宿・青山観光の拠点に最適。",
+    "渋谷駅徒歩5分・神泉駅徒歩3分。80㎡の広々空間で最大6名。Netflix・Disney+・Nintendo Switch・ドラム式洗濯機・浴槽・キッチン・リビング・ボタニスト完備。渋谷観光・グループ旅行に最適。",
   keywords:
-    "ぷらっとハウス表参道, 表参道 民泊, 表参道 宿泊, 原宿 民泊, 西麻布 民泊, 港区 民泊, 表参道 カップル, Omotesando accommodation, Tokyo Harajuku stay, 表参道 キッチン付き 宿泊",
+    "ぷらっとハウス渋谷, 渋谷 民泊, 渋谷 宿泊, 神泉 民泊, 渋谷 グループ, 渋谷 一棟貸し, Shibuya accommodation, Tokyo Shibuya stay, 渋谷 浴槽付き 宿泊, 渋谷 最大6名",
   openGraph: {
-    title: "ぷらっとハウス表参道 | 表参道駅10分 キッチン・浴槽完備",
+    title: "ぷらっとハウス渋谷Ⅲ（神泉）| 渋谷駅5分 80㎡ 最大6名",
     description:
-      "表参道駅10分。キッチン・浴槽・リビング付き20㎡。Netflix・Switch・10ギガ・ボタニスト完備。",
-    url: "https://omotesando.plat-house.jp",
-    siteName: "Plat House Omotesando",
+      "渋谷駅5分・神泉駅3分。80㎡・最大6名。Netflix・Disney+・浴槽・キッチン・ボタニスト完備。",
+    url: "https://shibuya3.plat-house.jp",
+    siteName: "Plat House Shibuya III",
     locale: "ja_JP",
     type: "website",
   },
   alternates: {
-    canonical: "https://omotesando.plat-house.jp",
+    canonical: "https://shibuya3.plat-house.jp",
     languages: {
-      "ja": "https://omotesando.plat-house.jp",
-      "en": "https://omotesando.plat-house.jp/en",
+      "ja": "https://shibuya3.plat-house.jp",
+      "en": "https://shibuya3.plat-house.jp/en",
     },
   },
 };
@@ -43,26 +43,27 @@ export default function RootLayout({
         <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LodgingBusiness",
-          "name": "ぷらっとハウス表参道",
-          "url": "https://omotesando.plat-house.jp",
+          "name": "ぷらっとハウス渋谷Ⅲ（神泉）",
+          "url": "https://shibuya3.plat-house.jp",
           "telephone": "08070583086",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "西麻布2-21-13",
-            "addressLocality": "港区",
+            "streetAddress": "円山町22-3",
+            "addressLocality": "渋谷区",
             "addressRegion": "東京都",
-            "postalCode": "106-0031",
+            "postalCode": "150-0044",
             "addressCountry": "JP"
           },
           "checkinTime": "16:00",
           "checkoutTime": "11:00",
-          "priceRange": "¥15,000〜¥30,000",
+          "priceRange": "¥30,000〜¥60,000",
           "amenityFeature": [
             { "@type": "LocationFeatureSpecification", "name": "Netflix", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Disney+", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Nintendo Switch", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "キッチン", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "浴槽", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "10ギガインターネット", "value": true }
+            { "@type": "LocationFeatureSpecification", "name": "キッチン", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "ドラム式洗濯機", "value": true }
           ]
         }) }} />
         {children}
