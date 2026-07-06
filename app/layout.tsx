@@ -9,25 +9,25 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "ぷらっとハウス北新宿 | 大久保駅徒歩10分 80㎡3LDK戸建て 最大10名 民泊",
+  title: "ぷらっとハウス初台 | 初台駅徒歩7分 30㎡1K 最大4名 民泊",
   description:
-    "大久保駅（JR総武線）徒歩10分・東中野駅徒歩7分。80㎡の3LDK戸建て一棟貸切・最大10名。Netflix・キッチン・浴槽・ソファーベッド完備。新宿観光・グループ旅行に最適。",
+    "初台駅（京王新線）徒歩7分・西新宿5丁目駅徒歩10分。30㎡の1K一棟貸切・最大4名。ダブルマットレス×2・Nintendo Switch・キッチン完備。新宿エリアのプライベートステイ。",
   keywords:
-    "ぷらっとハウス北新宿, 大久保 民泊, 北新宿 宿泊, 新宿 戸建て 民泊, 新宿 グループ宿泊, 東中野 民泊, Kitashinjuku accommodation, Tokyo group stay",
+    "ぷらっとハウス初台, 初台 民泊, 新宿 宿泊, 西新宿 民泊, Hatsudai accommodation, Tokyo stay",
   openGraph: {
-    title: "ぷらっとハウス北新宿 | 大久保駅10分 80㎡3LDK 最大10名",
+    title: "ぷらっとハウス初台 | 初台駅7分 30㎡1K 最大4名",
     description:
-      "大久保駅10分・東中野駅7分。80㎡3LDK戸建て一棟貸切・最大10名。Netflix・キッチン・浴槽完備。",
-    url: "https://kitashinjuku.plat-house.jp",
-    siteName: "Plat House Kitashinjuku",
+      "初台駅7分。30㎡1K一棟貸切・最大4名。ダブルマットレス×2・Nintendo Switch・キッチン完備。",
+    url: "https://hatsudai.plat-house.jp",
+    siteName: "Plat House Hatsudai",
     locale: "ja_JP",
     type: "website",
   },
   alternates: {
-    canonical: "https://kitashinjuku.plat-house.jp",
+    canonical: "https://hatsudai.plat-house.jp",
     languages: {
-      "ja": "https://kitashinjuku.plat-house.jp",
-      "en": "https://kitashinjuku.plat-house.jp/en",
+      "ja": "https://hatsudai.plat-house.jp",
+      "en": "https://hatsudai.plat-house.jp/en",
     },
   },
 };
@@ -43,25 +43,23 @@ export default function RootLayout({
         <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LodgingBusiness",
-          "name": "ぷらっとハウス北新宿",
-          "url": "https://kitashinjuku.plat-house.jp",
+          "name": "ぷらっとハウス初台",
+          "url": "https://hatsudai.plat-house.jp",
           "telephone": "08070583086",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "北新宿４－２１－１７",
-            "addressLocality": "新宿区",
+            "streetAddress": "初台",
+            "addressLocality": "渋谷区",
             "addressRegion": "東京都",
-            "postalCode": "169-0074",
+            "postalCode": "160-0023",
             "addressCountry": "JP"
           },
           "checkinTime": "16:00",
           "checkoutTime": "11:00",
-          "priceRange": "¥30,000〜¥70,000",
+          "priceRange": "¥19,800〜¥19,800",
           "amenityFeature": [
-            { "@type": "LocationFeatureSpecification", "name": "Netflix", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Nintendo Switch", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "キッチン", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "浴槽", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "ポケットWi-Fi", "value": true }
           ]
         }) }} />
