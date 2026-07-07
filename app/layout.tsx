@@ -9,6 +9,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "gXHCgYW1liWYzDHLdMnZqsms3IllJliPGWeecgZRK5E",
+  },
   title: "ぷらっとハウス初台 | 初台駅徒歩7分 30㎡1K 最大4名 民泊",
   description:
     "初台駅（京王新線）徒歩7分・西新宿5丁目駅徒歩10分。30㎡の1K一棟貸切・最大4名。ダブルマットレス×2・Nintendo Switch・キッチン完備。新宿エリアのプライベートステイ。",
